@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+
+hibernate:
+  dialect=org:
+    hibernate:
+      dialect: org.hibernate.dialect.H2Dialect

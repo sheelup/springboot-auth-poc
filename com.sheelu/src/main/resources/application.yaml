@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: IN_MEMORY
+
+server:
+  servlet:
+    context-path: /timzone-app
+
+springfox:
+  documentation:
+    swaggerUi:
+      baseUrl: /documentation
+    swagger:
+      v2:
+        path: /documentation/v2/api-docs
+app:
+  jwt:
+    tokenExpirationTime: 15 # Number of minutes
+    refreshTokenExpTime: 60 # Minutes
+    tokenIssuer: http://sheelapurbiya.com
+    tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
+  roles: STANDARD, ADMIN
+  adminUserName: myuser
+  adminPassword: resuym
+
+
